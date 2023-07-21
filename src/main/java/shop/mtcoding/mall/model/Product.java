@@ -15,4 +15,7 @@ public class Product {
     private  String name;
     private  Integer price;
     private  Integer qty;
+
+    @ManyToOne // 포링키(FK) (ORM)
+    private Seller seller; //오브젝트를 바로 사용 가능
 }
